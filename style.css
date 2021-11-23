@@ -1,0 +1,1211 @@
+/*----------------------------- Home ----------------------------------*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+/*.container-imagem {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('imagens/background.jpg');
+    background-size: cover;
+}*/
+
+.bg {
+    background-image: url(imagens/bg02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+
+
+.container-imgindex {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container-imgindex img {
+    width: 100%;
+    opacity: 85%;
+    transition: 1s;
+}
+
+.container-imgindex img:hover {
+    width: 100%;
+    opacity: 100%;
+    transition: 1s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0%;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 0px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    body {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    html {
+       
+       height: 100%;
+    }
+}
+
+
+    
+
+
+main {
+    flex: 1 0 auto;
+    margin-top: 110px;
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        flex: 1 0 auto;
+        margin-top: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        flex: 1 0 auto;
+        margin-top: 150px;
+    }
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+    height: 150px;
+    width: 100%;
+    transition: 1s;
+    background-color: white;
+}
+
+header:hover {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+    height: 150px;
+    width: 100%;
+    transition: 1s;
+    background-color: rgb(219, 219, 219);
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        top: 0;
+        left: 0;
+        position: relative;
+        z-index: 9999;
+        height: 150px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+    .container-header {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
+
+.logo {
+    margin-left: 60px;
+    margin-top: 3px;
+    width: 200px; 
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .logo {
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 220px; 
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 320px; 
+        display: flex;
+    }
+}
+
+.logo-produto {
+    margin-right: 530px;
+}
+
+div#menu ul {
+    transform: translateX(63%);
+    background-color: rgba(140, 182, 154, 0);
+    transition: 0.5s;
+    list-style: none;
+    border-radius: 5px;
+    
+}
+
+@media screen and (max-width: 1700px) {
+    div#menu ul {
+        transform: translateX(40%);
+        background-color: rgba(140, 182, 154, 0);
+        transition: 0.5s;
+        list-style: none;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    div#menu ul {
+        transform: translateX(0%);
+        background-color: rgba(140, 182, 154, 0);
+        transition: 0.5s;
+        list-style: none;
+        border-radius: 5px;
+    }
+}
+
+
+
+div#menu ul li {
+    display: inline;
+}
+
+div#menu ul li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16pt;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 780px) {
+    div#menu ul li a {
+    padding: 10px 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div#menu ul li a {
+    padding: 10px 5px;
+    display: inline-block;
+    font-size: 15pt;
+    text-decoration: none;
+    transition: 0.5s;
+    }
+}
+
+
+
+    
+
+
+div#menu ul li a:hover {
+    background-color: rgba(0, 128, 0, 0.4);
+    border-radius: 40px 40px;
+    transform: scale(1.25);
+    transition: 1s;
+}
+
+
+p#text {
+    text-align: left;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+h2#text2 {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h2#text3 {
+    text-align: left;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: rgb(140, 182, 154);
+    padding: 30px;
+}
+
+.carousel-control-prev {
+    margin-bottom: 30%;
+}
+
+.carousel-control-next {
+    margin-bottom: 30%;
+}
+
+.img-product {
+    padding: 0px 30px 30px 30px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .imgcer, .imgeps {
+        width: 50%;
+    }
+}
+
+.imgcer {
+    margin: auto;
+    opacity: 50%;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.imgcer:hover {
+    margin: auto;
+    opacity: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.imgeps {
+    margin: auto;
+    opacity: 50%;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.imgeps:hover {
+    margin: auto;
+    opacity: 100%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.accordion {
+    margin-bottom: 100px; 
+    padding-left: 250px;
+    padding-right: 250px;
+    
+}
+
+@media  screen and (max-width: 1200px) {
+    .accordion {
+        margin-bottom: 100px; 
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+    
+@media  screen and (max-width: 500px) {
+    .accordion {
+        margin-bottom: 100px; 
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(34, 218, 34, 0.05);
+    background-color: #e7ffed9f;
+    box-shadow: rgba(140, 182, 154, 0.2);
+    
+}
+
+
+
+
+
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+
+.accordion-button{
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+
+
+/*------------------------------------- Page Produtos -------------------------------------------*/
+
+.produto-title {
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 1165px) {
+    .produto-title {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .produto-title {
+        margin-left: 50px;
+    }
+}
+
+
+
+.foto1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 950px) { 
+    .body-cards {
+        margin-top: 30px;
+        margin-left: 150px;
+        display: inline-block;
+        align-items: center;
+        transition: 0.5s;
+    }
+}
+
+
+.line {
+    transition: 0.5s;
+    display: flex;  
+    margin: auto;
+    
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .line {
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+}
+
+.card-c {
+    margin-left: 14px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+    .card-c {
+        margin: auto;
+    }
+}
+
+.card-e {
+    margin-left: 14px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+    .card-e {
+        margin: auto;
+    }
+}
+
+.card-p {
+    margin-left: 14px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+    .card-p {
+        margin: auto;
+    }
+}
+
+.card-ptn {
+    margin-left: 14px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+    .card-ptn {
+        margin: auto;
+    }
+}
+
+.card-cortina {
+    margin-left: 14px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+    .card-cortina {
+        margin: auto;
+    }
+}
+
+
+.titulo {
+    padding: 20px;
+    text-align: center;
+    font-size: 20pt;
+
+}
+
+div#res {
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+div#opcao ul {
+    margin-top: 30px;
+    text-align: center;
+    list-style: none;
+}
+
+div#opcao ul li {
+    display: inline;
+}
+
+
+.btn  {
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 24px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(119, 156, 132);
+}
+
+
+img#img-cer {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: translateX(0%) translateY(0%) scale(1);
+    z-index: 2;
+}
+
+img#img-cer:hover {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: translateX(30%) translateY(10%) scale(1.75);
+    z-index: 20;
+}
+
+@media screen and (max-width: 750px) {
+    img#img-cer:hover {
+        position: relative;
+        transition: all 0.5s ease;
+        transform: translateX(0%) translateY(0%) scale(1);
+        z-index: 2;
+    } 
+}
+
+img#img-eps {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    z-index: 2;
+    
+}
+
+img#img-eps:hover {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: scale(1.75);
+    z-index: 20;
+}
+
+@media screen and (max-width: 750px) {
+    img#img-eps:hover {
+        position: relative;
+        transition: all 0.5s ease;
+        transform: translateX(0%) translateY(0%) scale(1);
+        z-index: 2;
+    } 
+}
+
+img#img-ptm {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    z-index: 2;
+}
+
+img#img-ptm:hover {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: scale(1.75);
+    z-index: 20;
+}
+
+@media screen and (max-width: 750px) {
+    img#img-ptm:hover {
+        position: relative;
+        transition: all 0.5s ease;
+        transform: translateX(0%) translateY(0%) scale(1);
+        z-index: 2;
+    } 
+}
+
+img#img-ptn{
+    position: relative;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    z-index: 2;
+}
+
+img#img-ptn:hover {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: scale(1.75);
+    z-index: 20;
+}
+
+@media screen and (max-width: 750px) {
+    img#img-ptn:hover {
+        position: relative;
+        transition: all 0.5s ease;
+        transform: translateX(0%) translateY(0%) scale(1);
+        z-index: 2;
+    } 
+}
+
+img#img-cor:hover {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: translateX(-30%) translateY(10%) scale(1.75);
+    z-index: 20;
+}
+
+@media screen and (max-width: 750px) {
+    img#img-cor:hover {
+        position: relative;
+        transition: all 0.5s ease;
+        transform: translateX(0%) translateY(0%) scale(1);
+        z-index: 2;
+    } 
+}
+
+img#img-cor {
+    position: relative;
+    transition: all 0.5s ease;
+    transform: translateX(0%) translateY(0%) scale(1);
+    z-index: 2;
+}
+
+
+/*-----------------------------------------------------page orçamento----------------------------------------------------------*/
+
+.textform {
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.orçamento {
+    margin-left: 150px;
+}
+
+.vao {
+    margin-right: 10px;
+    background-color: rgb(119, 156, 132);
+    border-radius: 5px;
+    box-shadow: rgb(150, 150, 150) 2px 2px 2px;
+    padding: 5px;
+}
+
+.container2 {
+    display: inline-flex;
+    align-items: center;
+    margin: 40px auto auto 25%;
+}
+
+.altura {
+    margin-left: 10px;
+    background-color: rgb(119, 156, 132);
+    border-radius: 5px;
+    box-shadow: rgb(150, 150, 150) 2px 2px 2px;
+    padding: 5px;
+}
+
+.tipo {
+    background-color: rgb(162, 209, 178);
+    border-radius: 5px;
+    box-shadow: rgb(150, 150, 150) 2px 2px 2px;
+    padding: 5px;
+}
+
+.enchimento {
+    margin-left: 10px;
+    background-color: rgb(162, 209, 178);
+    border-radius: 5px;
+    box-shadow: rgb(150, 150, 150) 2px 2px 2px;
+    padding: 5px;
+}
+
+#beta16 {
+    margin-left: 10px;
+}
+
+#beta20 {
+    margin-left: 10px;
+}
+
+input#forro {
+    margin-left: 5px;
+}
+
+input#piso {
+    margin-left: 10px;
+}
+
+.btn-calcular {
+    margin-left: 47%;
+    margin-top: 30px;
+}
+
+#valororc {
+    margin-left: 36%;
+    width: 450px;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.alert-warning {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*-------------------------------------------- page localização -----------------------------------------------------*/
+
+.local {
+    margin-left: 135px;
+}
+
+@media screen and (max-width: 750px) {
+    .local {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .local {
+        margin-left: 0px;
+    }
+}
+
+.localizacao {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+
+.localizacao1 {
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .localizacao1 {
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 10%;
+    } 
+}
+
+/*-------------------------------------------------------- Page Obras ---------------------------------------------------------*/
+
+
+
+
+
+.obratext {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20pt
+}
+
+#carouselExampleControls {
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        margin-top: 17%;
+        transform: scale(1.15);
+        transition: all 0.5s ease;
+    }
+}
+
+
+
+#carouselExampleControls:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.35);
+}
+
+@media screen and (max-width: 1490px) {
+    #carouselExampleControls:hover {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+    }
+}
+
+#carouselExampleControls2 {
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls2 {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        transform: scale(1.15);
+        transition: all 0.5s ease;
+    }
+}
+
+#carouselExampleControls2:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.35);
+}
+
+@media screen and (max-width: 1490px) {
+    #carouselExampleControls2:hover {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls2:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+    }
+}
+
+#carouselExampleControls3 {
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls3 {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        transform: scale(1.15);
+        transition: all 0.5s ease;
+    }
+}
+
+#carouselExampleControls3:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.35);
+}
+
+@media screen and (max-width: 1490px) {
+    #carouselExampleControls3:hover {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls3:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+    }
+}
+
+#carouselExampleControl4 {
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControl4 {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        transform: scale(1.15);
+        transition: all 0.5s ease;
+    }
+}
+
+#carouselExampleControl4:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.35);
+}
+
+@media screen and (max-width: 1490px) {
+    #carouselExampleControls4:hover {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls4:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+    }
+}
+
+#carouselExampleControls5 {
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls5 {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        transform: scale(1.15);
+        transition: all 0.5s ease;
+    }
+}
+
+#carouselExampleControls5:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.35);
+}
+
+@media screen and (max-width: 1490px) {
+    #carouselExampleControls5:hover {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls5:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+    }
+}
+
+#carouselExampleControls6 {
+    height: 450px;
+    width: 400px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls6 {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        transform: scale(1.15);
+        transition: all 0.5s ease;
+    }
+}
+
+#carouselExampleControls6:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.35);
+}
+
+@media screen and (max-width: 1490px) {
+    #carouselExampleControls6:hover {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #carouselExampleControls6:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+    }
+}
+
+
+#anterior {
+    margin-bottom: 30%;
+}
+
+#proximo {
+    margin-bottom: 30%;
+}
+
+.obrapanasonic {
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.linha01 {
+   
+    margin: 50px auto;
+    display: flex;
+}
+
+@media screen and (max-width: 850px) {
+    .linha01 {
+        width: 75%;
+        margin: auto;
+        display: inline;
+    }
+}
+
+
+
+.linha02 {
+    margin: 50px auto;
+    display: flex
+}
+
+@media screen and (max-width: 850px) {
+    .linha02 {
+        width: 75%;
+        margin: auto;
+        display: inline;
+    }
+}
+
+
+
+
+
+/* ----------------------------------PAGE CONTATO --------------------------*/
+
+form {
+    background-color: rgba(140, 182, 154, 0.7);
+    padding: 40px;
+    width: 30%;
+    border-radius: 4%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+@media  screen and (max-width: 1500px) {
+    form {
+        background-color: rgba(140, 182, 154, 0.7);
+        padding: 40px;
+        width: 50%;
+        border-radius: 4%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    form {
+        background-color: rgba(140, 182, 154, 0.7);
+        padding: 40px;
+        width: 80%;
+        border-radius: 4%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+.form-label {
+	font-size: 12px;
+	color: #5e9bfc;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 12px 12px;
+	border-color: rgba(140, 182, 154);
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+
+
+.form-text {
+    font-size: medium;
+    color: black;
+    padding-bottom: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-contact {
+    text-align: center;
+    font-size: 14pt;
+    margin-top: 120px;
+}
+
+.contato {
+    margin-left: 200px;
+}
+
+.form-group {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-enviar {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 5px;
+    background-color: rgb(141, 141, 141);
+    border-radius: 15px;
+    transition: 1s;
+    color: white;
+}
+
+.btn-enviar:hover {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    transition: 1s;
+    
+    
+}
+
+@media screen and (max-width: 800px) {
+    .form-group {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .form-group {
+        width: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .contato {
+        margin-left: 100px;
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contato {
+        margin-left: 40px;
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contato {
+        margin-left: 0px;
+        transition: .5s;
+    }
+}
